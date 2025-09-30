@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <title>To do</title>
+</head>
+<body class="bg-gray-100 flex justify-center items-center flex-col ">
+    <div class="flex flex-col items-center controles">
+        <h1 class="text-5xl font-bold text-center my-6">To do App</h1>
+        <input type="text" name="Tarea" id="inputTareas" class="border-solid border-gray-700 border-2 w-96 h-12 rounded-lg focus:border-pink-600 outline-none ">
+        <br>
+        <br>
+        <div class="flex justify-around w-150 mt-3">
+            <button class="bg-blue-500 text-white font-bold py-2 px-4 rounded-lg      btn-anadir cursor-pointer ">añadir</button>
+            <button class="bg-red-500 text-white font-bold py-2 px-4 rounded-lg      btn-eliminar-todas cursor-pointer ">Eliminar todas las tareas</button>
+            <button class="bg-green-500 text-white font-bold py-2 px-4 rounded-lg      btn-completar cursor-pointer ">Completar</button>
+            <button class="bg-yellow-500 text-white font-bold py-2 px-4 rounded-lg      btn-editar cursor-pointer ">Editar</button>
+            <button class="bg-pink-500 text-white font-bold py-2 px-4 rounded-lg      btn-completar cursor-pointer ">Eliminar</button>
+        </div>
+    <h2 class="text-5xl font-bold text-center my-6 text-blue-500">Todas las tareas:</h2>
+    
+    <div class="tareas h-100 w-100 mt-10">
+        
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
