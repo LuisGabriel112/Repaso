@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador con autocompletado</title>
+</head>
+<body>
+    <input type="text" id="input" placeholder="Buscar...">
+
+    <div id="sugerencias">
+
+    </div>
+
+    <script>
+        let paises = ["Argentina", "Brasil", "Chile", "Colombia", "Ecuador", "Perú", "México"];
+        let input = document.getElementById("input");
+
+        input.addEventListener("keyup", logKey);
+
+        function logKey(){
+            let sugerencias = document.getElementById("sugerencias");
+            sugerencias.innerHTML = "";
+            for (let i = 0; i < paises.length; i++){
+                if (paises[i].toLowerCase().includes(this.value.toLowerCase())){
+                    sugerencias.innerHTML += `<div>${paises[i]}</div>`;
+                }
+            }
+        }
+    </script>
+</body>
+</html>
